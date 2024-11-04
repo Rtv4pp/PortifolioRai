@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1d1b27;
+    color: #f2f2f2;
+}
+
+body h1 {
+    text-align: center;
+    padding: 2rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #a28bbd;
+}
+
+.portfolio-section {
+    padding: 3rem 1rem;
+}
+
+.portfolio-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #c9aed8;
+}
+.portfolio-section p {
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    color: #a7a7a7;
+}
+.image-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.image-box {
+    width: 30%;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s ease-out;
+}
+
+.image-box img {
+    width: 100%;
+    height: 300px; /* Defina a altura desejada */
+    object-fit: cover; /* Isso garante que a imagem preencha o contêiner sem distorção */
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.image-box img:hover {
+    transform: scale(1.05);
+}
+
+.slide-in.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    width: 100%;
+    padding: 2rem;
+    padding-top: 6rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.intro-text {
+    max-width: 60%;
+    padding-bottom: 5rem;
+}
+
+.intro-text h1 {
+    font-size: 2.5rem;
+    color: white;
+    justify-content: center;
+}
+
+.intro-text p {
+    font-size: 1.2rem;
+    color: white;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+
+.intro-text strong {
+    font-weight: bold;
+    color: #86E3CE;
+}
+
+.intro-text a {
+    color: #86E3CE;
+    text-decoration: none;
+    border-bottom: 1px solid #86E3CE;
+}
+
+.intro-text a:hover {
+    color: #333333;
+    border-bottom: 1px solid #333333;
+}
+
+.intro-image {
+    max-width: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.intro-text img {
+    display: block;
+    margin: 2rem auto;
+    width: 8rem;
+    border-radius: 50%;
+}
